@@ -11,7 +11,13 @@ import SwiftUI
 struct HumansAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                HumansView()
+                    .tabItem {
+                        Symbols.person
+                        Text("Home")
+                    }
+            }
         }
     }
 }
